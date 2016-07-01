@@ -3,7 +3,7 @@ const $search = $searchSection.querySelector('input')
 const $moviesSection = document.querySelector('section#movies')
 
 const request = window.superagent
-const api = 'http://www.omdbapi.com/?'
+const api = 'https://www.omdbapi.com/?'
 
 
 $search.addEventListener('keydown', function (event) {
