@@ -1,0 +1,98 @@
+html{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: #501d90;
+    text-align: center;
+}
+
+nav a{
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.5em 0.65em;
+    font-size: 1.25em;
+    font-weight: 300;
+    
+}
+
+nav a.active, a:hover{
+    background-color: #90501d;
+}
+
+div#response{
+    line-height: 0;
+}
+
+div#response h1#failed{
+    color: #ffffff;
+    padding: 0.5;
+    margin: 0;
+    line-height: 1.5em;
+    font-weight: 300;
+    text-align: center
+}
+
+nav input{
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 1.25em;
+    font-weight: 300;
+    padding: 0.5em 0.65em;
+}
+
+nav input:focus{
+    outline: none;
+}
+
+div#response a{
+    display: inline-block;
+    width: 33.333%;
+    height: 33.333vw;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+
+div#response a div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0 ,0, 10, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    
+}
+
+div#response a div:hover{
+    opacity: 1;
+}
+
+div#response a div h1{
+    width: 80%;
+    text-align: center;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.45em;
+    font-weight: 300;
+    margin: 0;
+}
+div#response a div h2{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 1.25em;
+    margin: 0;
+}

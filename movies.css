@@ -1,0 +1,90 @@
+html {
+	height: 100%;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+    font-weight: 300;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+}
+
+section.hidden{
+    display: none !important;
+}
+
+section#search {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-image: url('cinema.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+section#search h1 {
+	color: #fff;
+	padding: 0.1em 0;
+	margin: 0;
+	font-family: 'Cabin', sans-serif;
+	font-size: 8em;
+	font-weight: 700;
+}
+
+section#search input {
+    background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 6em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 1.75em;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 0.65em 1em;
+}
+
+section#search input:focus{
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.625);
+    color: #fff;
+}
+
+section#movies a{
+    display: inline-block;
+    width: 20%;
+    height: 29.733vw;
+    background-color: #000000;
+    background-size: cover;
+    text-decoration: none;
+    vertical-align: top;
+    
+}
+
+section#movies a div{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.125s ease
+
+}
+
+section#movies a div:hover, section#movies a div.no-poster {
+    opacity: 1;
+}
+
+section#movies a div span{
+    color: #fff;
+    width: 80%;
+    font-size: 2em;
+    text-align: center;
+    color: rgba(255,255,255, 0.8);
+    text-align: center;
+}
