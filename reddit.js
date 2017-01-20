@@ -123,7 +123,7 @@ cars.addEventListener('click', function () {
 	if (active) {
 		active.classList.remove('active')
 	}
-	food.classList.add('active')
+	cars.classList.add('active')
 	response.innerHTML = ''
 	getImages('Cars')
 })
