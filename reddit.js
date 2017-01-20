@@ -44,6 +44,7 @@ const space = document.querySelector('nav a#space')
 const trump = document.querySelector('nav a#trump')
 const timing = document.querySelector('nav a#timing')
 const food = document.querySelector('nav a#food')
+const cars = document.querySelector('nav a#cars')
 const custom = document.querySelector('nav input')
 const response = document.querySelector('div#response')
 
@@ -117,6 +118,16 @@ food.addEventListener('click', function () {
 
 })
 
+cars.addEventListener('click', function () {
+	const active = document.querySelector('nav a.active')
+	if (active) {
+		active.classList.remove('active')
+	}
+	food.classList.add('active')
+	response.innerHTML = ''
+	getImages('Cars')
+})
+	
 custom.addEventListener('keydown', function (event) {
 	if (event.keyCode != 13 || custom.value == '') {
 		return
